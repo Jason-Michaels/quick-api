@@ -16,12 +16,12 @@ exports.app_config2 = functions.https.onRequest((request, response) => {
     return;
   } else {
     if (!request.body.getKey) {
-        response.status(400).send("pt2 :(");
-        return;
+      response.status(400).send("pt2 :(");
+      return;
     } else {
-        one();
-        two();
-        response.send("Hello World (post)...");
+      one();
+      two();
+      response.send("Hello World (post)...");
     }
   }
 });
